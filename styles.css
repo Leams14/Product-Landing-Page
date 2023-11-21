@@ -1,0 +1,133 @@
+/* General style*/
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+}
+
+header {
+  background-color: rgb(81, 152, 180);
+  padding: 10px;
+  text-align: center;
+}
+
+#header-img {
+  width: 15%;
+  height: auto;
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em
+}
+
+.nav-bar ul {
+  list-style: none; 
+  display: flex; 
+  justify-content: space-around; 
+  padding: 10px; 
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px; 
+  background-color: #1b1b32; 
+}
+
+.nav-link:hover{
+  color: #ff8c00;
+}
+
+/* Styling photo gallery */
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 15%;
+}
+
+.video {
+  display: block;
+  margin: 50px auto; 
+}
+
+a[href="https://github.com/Leams14"] {
+  color: #ff8c00; 
+  text-decoration: none; 
+  transition: color 0.8s ease; 
+}
+
+a[href="https://github.com/Leams14"]:hover {
+  color: #6DD6EA; 
+}
+
+
+/* Form style */
+#form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(81, 152, 180);
+  border-radius: 10px;
+}
+
+#email {
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: 10px auto;
+}
+
+#submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #333;
+}
+
+
+
+/* Section style */
+section {
+  padding: 20px;
+}
+
+/* Media query */
+@media screen and (max-width: 768px) {
+  #header-img {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .photo-gallery img {
+    max-width: 100%;
+  }
+}
